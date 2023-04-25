@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <!--
+        PCとスマホそれぞれに隠し要素があります。
+        以下、ヒントになります。
+        スマホ: スマホの操作は、タッチとスワイプだけだろうか
+        PC: 世界一有名な隠しコマンドといえば...
+    -->
+<head>
+    <!------------------Google Search Console----------------------->
+    <meta name="google-site-verification" content="TtmwRFcWtbWbA08eGx66sHuX7Rtp2q6bevy1c2qRopY" />
+    <!------------------og setting----------------------->
+    <meta name=”description” content="凪乃ましろ非公式ファンサイトです。">
+    <meta name="keyword" content="凪乃ましろ 凪乃 ましろ ファンサイト 非公式ファンサイト おやつ">
+    <meta property="og:description" content="凪乃ましろの非公式ファンサイトです。">
+    <meta property="og:title" content="凪乃ましろ 非公式ファンサイト">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image" content="https://mashirono-oyatsu.web.app/img/FdfukuTUYAALmN0.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mashirono-oyatsu.web.app/">
+    <!------------------meta setting----------------------->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <meta name="theme-color" content="rgb(251, 250, 245)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/16eab4fef0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/loader.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <style>
+        .ja {font-family: 'Noto Serif JP', serif !important;}
+        .en {font-family: 'Noto Serif', serif;}
+    </style>
+    <title>凪乃ましろ 非公式ファンサイト</title>
+</head>
+<body>
+<!-------------------------shutter animation---------------------------------->
+    <div id="loader" class="shutter_1">
+        <div class="shutter_1 loader">
+            <div class="shutter_1 bar"></div>
+            <div class="shutter_1 bar"></div>
+            <div class="shutter_1 bar"></div>
+            <div class="shutter_1 bar"></div>
+            <div class="shutter_1 bar"></div>
+            <div class="shutter_1 bar"></div>
+            <div class="shutter_1 bar"></div>
+            <div class="shutter_1 bar"></div>
+            <div class="shutter_1 bar"></div>
+            <div class="shutter_1 bar"></div>
+        </div>
+    </div>
+<!-------------------------header---------------------------------->
+    <header class="site-header">
+        <div class="PC-width PC">
+            <a href="#">
+                <h1 class="site-logo">
+                <img src="./img/header.webp" alt="Extra Study">
+                </h1>
+            </a>
+            <nav class="gnav PC">
+                <ul class="gnav__menu PC">
+                    <li class="gnav__menu__item PC"><a class="PC" href="https://twitter.com/search?q=%23%E5%87%AA%E3%81%AE%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9&src=typeahead_click">
+                        <span class="rubyposition_under PC_span"><ruby class="en">FunArt<rt class="ja">#凪のキャンバス</rt></ruby></span>
+                    </a></li>
+                    <li class="gnav__menu__item PC"><a class="PC" href="https://www.pixiv.net/users/429883">
+                        <span class="rubyposition_under PC_span"><ruby class="en">Parent<rt class="ja">菊月 -kikugetsu-</rt></ruby></span>
+                    </a></li>
+                    <li class="gnav__menu__item PC"><a class="PC" href="./attention/attention.html">
+                        <span class="rubyposition_under PC_span"><ruby class="en">Attention<rt class="ja">注意事項</rt></ruby></span>
+                    </a></li>
+                    <li class="gnav__menu__item PC"><a class="PC" href="./developer/developer.html">
+                        <span class="rubyposition_under PC_span"><ruby class="en">Developer<rt class="ja">サイト開発者</rt></ruby></span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <a class="toggle-btn mobile">
+            <span class="toggle-btn__line toggle-btn__line--top mobile"></span>
+            <span class="toggle-btn__line toggle-btn__line--center mobile"></span>
+            <span class="toggle-btn__line toggle-btn__line--bottom mobile"></span>
+        </a>
+        <nav class="global-nav mobile">
+            <div class="global-nav__inner mobile">
+                <ul class="global-nav__list mobile">
+                    <li class="global-nav__item mobile"><a class="a_mobile mobile" href="https://twitter.com/search?q=%23%E5%87%AA%E3%81%AE%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9&src=typeahead_click">
+                        <span class="rubyposition_under mobile_span"><ruby class="en">FunArt<rt class="ja">#凪のキャンバス</rt></ruby></span>
+                    </a></li>
+                    <li class="global-nav__item mobile"><a class="a_mobile mobile" href="https://www.pixiv.net/users/429883">
+                        <span class="rubyposition_under mobile_span"><ruby class="en">Parent<rt class="ja">菊月 -kikugetsu-</rt></ruby></span>
+                    </a></li>
+                    <li class="global-nav__item mobile"><a class="a_mobile mobile" href="./attention/attention.html">
+                        <span class="rubyposition_under mobile_span"><ruby class="en">Attention<rt class="ja">注意事項</rt></ruby></span>
+                    </a></li>
+                    <li class="global-nav__item mobile"><a class="a_mobile mobile" href="./developer/developer.html">
+                        <span class="rubyposition_under mobile_span"><ruby class="en">Developer<rt class="ja">サイト開発者</rt></ruby></span>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="parallax"></div>
+
+    <div class="blur"></div>
+    <div class="container">
+        <div class="blog-card spring-fever">
+            <div class="title-content">
+                <h3 class="TopBigTitleh3"><a class="ja Top_a TopBigTiltle" href="#">凪乃ましろ</a></h3>
+                <div class="intro"><a class="ja TopBigSubTiltle" href="#">頭まっしろ歌うぽんこつ</a></div>
+            </div>
+            <div class="ja card-info">
+                とある夢を追いかけて住んでいた街を飛び出し、
+                憧れていた海の見える町にたどり着いた。
+                <!-- <a class="Top_a" href="#">More</a> -->
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="color-overlay"></div>
+        </div>
+
+        <div class="inner-container">
+            <!---------------------------harf_year------------------------------>
+            <div id="wrap"></div>
+            <!---------------------------harf_year------------------------------>
+            <div class="hashtagdiv body">
+                <img class="hashtagimg" src="./img/naginomashiro.webp">
+            </div>
+            <div class="profile">
+                <img class="profileimg scroll_up_introduction1" src="./img/FdfukuPUUAAbmZX.webp">
+                <dicv class="card">
+                    <div class="text scroll_up_introduction2 back">
+                        <h2 class="ja profileh2 profileh2start profileh2-color1">頭まっしろ</h2>
+                        <h2 class="ja profileh2 profileh2-color2">　歌うポンコツ</h2>
+                        <h2 class="ja profileh2 profileh2end profileh2-color3">　　凪乃ましろです🍽</h2>
+                        <br>
+                        <h4 class="ja en profileh4">
+                            　とある夢を追いかけて住んでいた街を飛び出し、
+                            憧れていた海の見える町にたどり着きました。
+                            <br>
+                            　これからこの場所で、歌を中心に、ASMR、ゲームなど、
+                            たくさんのことに挑戦していきます！
+                            見守ってくださると嬉しいです。
+                            自慢の推し、生き甲斐になれるようにがんばります！
+                        </h4>
+                        <div class="hoverdiv"></div>
+                    </div>
+                    <div class="text front">
+                        <h2 class="ja baseh2 baseh2margin profileh2-color1">身長</h2>
+                        <p class="ja basep">157cm</p>
+                        <h2 class="ja baseh2 baseh2margin profileh2-color2">誕生日</h2>
+                        <p class="ja basep">4月6日</p>
+                        <h2 class="ja baseh2 baseh2margin profileh2-color3">趣味</h2>
+                        <p class="ja basep">歌うこと・料理・ピアノ</p>
+                        <h2 class="ja baseh2 baseh2margin profileh2-color1">好きなもの</h2>
+                        <p class="ja basep">音楽・全ての食材(トリコかな)・海・ゲーム・アニメ</p>
+                        <h2 class="ja baseh2 baseh2margin profileh2-color2">特に好きな食べもの</h2>
+                        <p class="ja basep">紅茶・いちごのケーキ・モンブラン・クッキー・洋酒入りチョコレート・えび・フライドチキン・ヤムウンセン</p>
+                        <h2 class="ja baseh2 baseh2margin profileh2-color3">特技</h2>
+                        <p class="ja basep">たくさん食べること・たくさん寝ること・耳コピ演奏・お箏</p>
+                    </div>
+                </dicv>
+
+            </div>
+
+            <div class="btn-div">
+                <a href="https://www.youtube.com/@naginomashiro" class="btn"><span class="fab fa-youtube fa-fw"></span><span class="ja en btn-text">　<span>凪乃ましろのYoutube</span><span>チャンネル</span></a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="hashtagdiv">
+                <img class="hashtagimg" src="./img/naginolive.webp">
+            </div>
+            <p class="ja kikugetsu-text">
+                以下の動画は、現在ライブ配信中の動画及び配信予約か最新の投稿動画及び最新のアーカイブになります。
+            </p>
+            <div class="youtube scroll_up_movie1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/?list=UUewRhO43UmIohSBzW2HMheA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="hashtagdiv">
+                <img class="hashtagimg" src="./img/live2d.webp">
+            </div>
+            <div class="youtube scroll_up_movie2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KSvrqoaoNS0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="hashtagdiv">
+                <img class="hashtagimg" src="./img/parents.webp">
+            </div>
+            <h2 class="ja kikugetu-title">菊月様</h2>
+            <h3 class="en kikugetu-subtitle">-kikugetsu-</h3>
+            <p class="ja kikugetsu-text">
+                2021年からフリーランスとしてキャラクターデザインやLive2Dの作成などで活躍されている。
+            </p>
+            <p class="ja kikugetsu-text">
+                以下、菊月様の活動場所リンク
+            </p>
+            <!---------------------------------PC------------------------------------->
+            <div class="kikugetsuPC kikugetu">
+                <div class="kikugetsuPC item-list">
+                    <div class="kikugetsuPC item kikugetsu-item scroll_up1">
+                        <div class="hover kikugetsuPC hashtagdiv">
+                            <a class="kikugetsuPC " href="https://twitter.com/kikugetu">
+                                <img class="kikugetsuPC hashtagimg" src="./img/twitter-kikugetsu.webp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="kikugetsuPC item kikugetsu-item scroll_up1">
+                        <div class="hover kikugetsuPC hashtagdiv">
+                            <a class="kikugetsuPC " href="https://kikugetsu.tumblr.com/">
+                                <img class="kikugetsuPC hashtagimg" src="./img/tumblr.webp">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="kikugetsuPC item-list">
+                    <div class="kikugetsuPC item kikugetsu-item scroll_up2">
+                        <div class="hover kikugetsuPC hashtagdiv">
+                            <a class="kikugetsuPC " href="https://www.pixiv.net/users/429883">
+                                <img class="kikugetsuPC hashtagimg" src="./img/pixiv.webp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="kikugetsuPC item kikugetsu-item scroll_up2">
+                        <div class="hover kikugetsuPC hashtagdiv">
+                            <a class="kikugetsuPC " href="https://kikugetsu.fanbox.cc/">
+                                <img class="kikugetsuPC hashtagimg" src="./img/pixiv_fanbox.webp">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------mobile------------------------------------->
+            <div class="hover kikugetsuMobile marshmallow">
+                <a class="kikugetsuMobile" href="https://twitter.com/kikugetu">
+                    <img class="kikugetsuMobile hashtagimg" src="./img/twitter-kikugetsu.webp">
+                </a>
+            </div>
+            <br>
+            <div class="hover kikugetsuMobile marshmallow">
+                <a class="kikugetsuMobile" href="https://kikugetsu.tumblr.com/">
+                    <img class="kikugetsuMobile hashtagimg" src="./img/tumblr.webp">
+                </a>
+            </div>
+            <br>
+            <div class="hover kikugetsuMobile marshmallow">
+                <a class="kikugetsuMobile" href="https://www.pixiv.net/users/429883">
+                    <img class="kikugetsuMobile hashtagimg" src="./img/pixiv.webp">
+                </a>
+            </div>
+            <br>
+            <div class="hover kikugetsuMobile marshmallow">
+                <a class="kikugetsuMobile" href="https://kikugetsu.fanbox.cc/">
+                    <img class="kikugetsuMobile hashtagimg" src="./img/pixiv_fanbox.webp">
+                </a>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="hashtagdiv">
+                <img class="hashtagimg" src="./img/hashtag.webp">
+            </div>
+            <!---------------------------------PC------------------------------------->
+            <div class="hashtagPC item-list">
+                <div class="hashtagPC item hashtagitem">
+                    <div class="hashtagPC hashtagdiv">
+                        <div class="hashtagPC mybox ja hashtagnormal">#凪乃ましろ</div>
+                    </div>
+                </div>
+                <div class="hashtagPC item hashtagitem">
+                    <div class="hashtagPC hashtagdiv">
+                        <div class="hashtagPC mybox ja hashtaglive">#なぎのらいぶ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hashtagPC item-list">
+                <div class="hashtagPC item hashtagitem">
+                    <div class="hashtagPC hashtagdiv">
+                        <div class="hashtagPC mybox ja hashtagFA">#凪のキャンバス</div>
+                    </div>
+                </div>
+                <div class="hashtagPC item hashtagitem">
+                    <div class="hashtagPC hashtagdiv">
+                        <div class="hashtagPC mybox ja hashtagFAR">#夜凪のキャンバス</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hashtagPC item-list">
+                <div class="hashtagPC item hashtagitem">
+                    <div class="hashtagPC hashtagdiv">
+                        <div class="hashtagPC mybox ja hashtagcut">#カット凪</div>
+                    </div>
+                </div>
+                <div class="hashtagPC item hashtagitem">
+                    <div class="hashtagPC hashtagdiv">
+                        <div class="hashtagPC mybox ja hashtagmail">#凪のお便り</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hashtagPC item-list">
+                <div class="hashtagPC item hashtagitem">
+                    <div class="hashtagPC hashtagdiv">
+                        <div class="hashtagPC mybox ja hashtaglunch">#まっしろごはん</div>
+                    </div>
+                </div>
+                <div class="hashtagPC item hashtagitem">
+                    <div class="hashtagPC hashtagdiv">
+                        <div class="hashtagPC mybox ja hashtagpiano">#まっしろピアノ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hashtagPC item-list">
+                <div class="hashtagPC hashtagdiv">
+                    <div class="hashtagPC mybox ja hashtagmarshmallow">#ましろのましまろ</div>
+                </div>
+            </div>
+            <!---------------------------------mobile------------------------------------->
+            <div class="hashtagMobile item-list">
+                <div class="hashtagMobile hashtagdiv">
+                    <div class="hashtagMobile mybox ja hashtagnormal">#凪乃ましろ</div>
+                </div>
+            </div>
+
+            <div class="hashtagMobile item-list">
+                <div class="hashtagMobile hashtagdiv">
+                    <div class="hashtagMobile mybox ja hashtaglive">#なぎのらいぶ</div>
+                </div>
+            </div>
+
+            <div class="hashtagMobile item-list">
+                <div class="hashtagMobile hashtagdiv">
+                    <div class="hashtagMobile mybox ja hashtagFA">#凪のキャンバス</div>
+                </div>
+            </div>
+
+            <div class="hashtagMobile item-list">
+                <div class="hashtagMobile hashtagdiv">
+                    <div class="hashtagMobile mybox ja hashtagFAR">#夜凪のキャンバス</div>
+                </div>
+            </div>
+
+            <div class="hashtagMobile item-list">
+                <div class="hashtagMobile hashtagdiv">
+                    <div class="hashtagMobile mybox ja hashtagcut">#カット凪</div>
+                </div>
+            </div>
+
+            <div class="hashtagMobile item-list">
+                <div class="hashtagMobile hashtagdiv">
+                    <div class="hashtagMobile mybox ja hashtagmail">#凪のお便り</div>
+                </div>
+            </div>
+
+            <div class="hashtagMobile item-list">
+                <div class="hashtagMobile hashtagdiv">
+                    <div class="hashtagMobile mybox ja hashtaglunch">#まっしろごはん</div>
+                </div>
+            </div>
+
+            <div class="hashtagMobile item-list">
+                <div class="hashtagMobile hashtagdiv">
+                    <div class="hashtagMobile mybox ja hashtagpiano">#まっしろピアノ</div>
+                </div>
+            </div>
+
+            <div class="hashtagMobile item-list">
+                <div class="hashtagMobile hashtagdiv">
+                    <div class="hashtagMobile mybox ja hashtagmarshmallow">#ましろのましまろ</div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="hashtagdiv">
+                <img class="hashtagimg" src="./img/naginomail.webp">
+            </div>
+            <div class="twitter-div">
+                <a class="twitter-timeline" href="https://twitter.com/Nagino_Mashiro?ref_src=twsrc%5Etfw" data-height="500px" data-theme="light" data-lang="ja" data-tweet-limit="50" data-show-replies="true" data-chrome="noheader">Tweets by Nagino_Mashiro</a>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="hashtagdiv">
+                <img class="hashtagimg" src="./img/sing.webp">
+            </div>
+            <div class="youtube scroll_up_movie3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtAxr4ZNb5pjMn2QkPxk_mHo4oiKGh2Ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="hashtagdiv">
+                <img class="hashtagimg" src="./img/sale.webp">
+            </div>
+
+            <!---------------------------------PC------------------------------------->
+            <div class="salePC item-list">
+                <div class="salePC item scroll_up3">
+                    <div class="hover salePC hashtagdiv">
+                        <a class="salePC " href="https://nagino.booth.pm/">
+                            <img class="salePC hashtagimg" src="./img/logo.webp">
+                        </a>
+                    </div>
+                </div>
+                <div class="salePC item scroll_up3">
+                    <div class="hover salePC hashtagdiv">
+                        <a class="salePC " href="https://naginomashiro.fanbox.cc/">
+                            <img class="salePC hashtagimg" src="./img/pixiv_fanbox.webp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------mobile------------------------------------->
+            <div class="hover saleMobile marshmallow">
+                <a class="saleMobile" href="https://nagino.booth.pm/">
+                    <img class="saleMobile hashtagimg" src="./img/logo.webp">
+                </a>
+            </div>
+            <br>
+            <div class="hover saleMobile marshmallow">
+                <a class="saleMobile" href="https://naginomashiro.fanbox.cc/">
+                    <img class="aleMobile hashtagimg" src="./img/pixiv_fanbox.webp">
+                </a>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="hashtagdiv">
+                <img class="hashtagimg" src="./img/mashiromarshmallow.webp">
+            </div>
+            <div class="box-shadow marshmallow scroll_up5">
+                <a href="https://marshmallow-qa.com/nagino_mashiro?utm_medium=url_text&utm_source=promotion">
+                    <img class="hashtagimg" src="./img/marshmallow.webp">
+                </a>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <footer>
+        <p class="en footer-p">凪乃ましろ非公式ファンサイト</p>
+        <p class="en footer-p">2023 © Yuki Osada.</p>
+    </footer>
+
+
+    <script src="./js/popup.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/loader.js"></script>
+    <script src="./js/jQuery.js"></script>
+    <script type="text/javascript" src="./js/harf-year.js"></script>
+</body>
+</html>

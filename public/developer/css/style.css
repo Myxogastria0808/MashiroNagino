@@ -1,0 +1,419 @@
+/*body全体*/
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*タイトル文字の配置*/
+.parallax {
+  box-sizing: border-box;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 200px);
+  padding: 5%;
+}
+
+/*背景画像を擬似要素で固定*/
+body::before {
+  background: url('../img/MyFace.webp') no-repeat center;/* 擬似要素に背景画像 */
+  background-size: cover;/* cover指定 */
+  content: "";/* 画像を表示させる為に必要*/
+  display: block;/*ブロックボックスで表示*/
+  position: fixed;/* 擬似要素全体を固定 */
+  width: 100%;/* 横幅を画面全体 */
+  height: 100vh;/* 縦幅を画面全体 */
+  top: 0;/* 上からの配置を0 */
+  left: 0;/* 左からの配置を0 */
+  z-index: -1;/*背景画像になるように重ね順を-1*/
+}
+
+.blur {
+  width: 100%;
+  height: 300px;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) rgb(255, 255, 255)); 
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgb(255, 255, 255)); 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)); 
+}
+.container {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.inner-container {
+  width: 95%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  text-shadow: 0px 0px 10px #000000;
+  margin-bottom: -150px;
+}
+@media screen and (min-width: 860px) {
+  .title {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 860px) and (min-width: 500px) {
+  .title {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 400px) {
+  .title {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+.attentionh1 {
+  color: rgb(4, 177, 240);
+  font-size: 40px;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.mysite {
+  text-decoration: none;
+}
+.mysite-div {
+  border-radius: 10px 10px 10px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 8px rgb(0, 87, 255);
+  width: 90%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mysite-div:hover {
+  animation: hover 0.6s forwards;
+}
+@keyframes hover {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+
+/*shutter animation loading*/
+.shutter_1 {
+  padding: 0;
+  margin: 0;
+}
+#loader {
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
+  text-align: center;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      display: none;
+      opacity: 0;
+      z-index: -1;
+  }
+}
+#loader.loaded {
+  animation: fadeOut 3s forwards;
+}
+.shutter_1 {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* The loader container */
+.loader {
+
+  width: 200px;
+  height: 100px;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+  
+  perspective: 1000px;
+  transform-style: preserv3d;
+}
+/* The bar */
+.bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 100px;
+  background-color: rgba(29, 33, 137, 0.6);
+  transform: scaleY(0);
+  transform-style: preserve3d;
+  animation: bar 3s cubic-bezier(.81,.04,.4,.7) infinite;
+}
+.bar:nth-child(2) {
+  left: 20px;
+  background-color: rgba(6, 49, 144, 0.6);
+  animation-delay: 50ms;
+}
+.bar:nth-child(3) {
+  left: 40px;
+  background-color: rgba(0, 64, 152, 0.6);
+  animation-delay: 100ms;
+}
+.bar:nth-child(4) {
+  left: 60px;
+  background-color: rgba(0, 91, 172, 0.6);
+  animation-delay: 150ms;
+}
+.bar:nth-child(5) {
+  left: 80px;
+  background-color: rgba(1, 104, 183, 0.6);
+  animation-delay: 200ms;
+}
+.bar:nth-child(6) {
+  left: 100px;
+  background-color: rgba(4, 114, 198, 0.6);
+  animation-delay: 250ms;
+}
+.bar:nth-child(7) {
+  left: 120px;
+  background-color: rgba(1, 128, 205, 0.6);
+  animation-delay: 300ms;
+}
+.bar:nth-child(8) {
+  left: 140px;
+  background-color: rgba(0, 140, 215, 0.6);
+  animation-delay: 350ms;
+}
+.bar:nth-child(9) {
+  left: 160px;
+  background-color: rgba(0, 151, 224, 0.6);
+  animation-delay: 400ms;
+}
+.bar:nth-child(10) {
+  left: 180px;
+  
+  background-color: rgb(2, 160, 233, 0.6);
+  
+  animation-delay: 450ms;
+}
+@keyframes bar {
+  0% {
+    transform: rotateZ(-180deg) rotateX(-360deg);
+  }
+  75%,100% {
+    transform: rotateZ(0) rotateX(0);
+  }
+}
+
+
+
+/*header*/
+@media screen and (max-width: 750px) {
+  .PC {
+      display: none;
+  }
+}
+@media screen and (min-width: 750px) {
+  .mobile {
+      display: none;
+  }
+}
+.site-header{
+  background: rgba(251, 250, 245, 0.485);
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 100;
+  height: 60px;
+  box-shadow: 0px  4px 6px 0px rgba(0, 0, 0, 0.482);
+}
+.site-header.transform {
+  background: rgb(251, 250, 245);
+}
+.PC-width {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.gnav {
+  padding-right: 20px;
+}
+.site-logo img{
+  height: 60px;
+  width: auto;
+  margin-top: -20px;
+}
+.gnav__menu{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gnav__menu__item{
+  margin-left: 20px;
+  list-style:none;
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+.gnav__menu__item a{
+  color: #333;
+  text-decoration: none;
+}
+.gnav__menu__item::after {
+  position: absolute;
+  bottom: .3em;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: rgb(31, 190, 187);
+  opacity: 0;
+  transition: .3s;
+  margin-bottom: -4px;
+}
+.gnav__menu__item:hover::after {
+  margin-bottom: -4px;
+  bottom: 0;
+  opacity: 1;
+  height: 2px;
+}
+.rubyposition_under{
+  display: inline-block;
+}
+.rubyposition_under ruby{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;  /* この指定は text-align-last を IE に対応させるために必要 */
+  text-align-last: center;
+}
+.PC_span ruby{
+  font-size: 20px;
+  text-align-last: center;
+}
+.mobile_span ruby{
+  font-size: 30px;
+  text-align-last: left;
+}
+/* ハンバーガーボタン
+==============================　*/
+.toggle-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+.toggle-btn__line {
+  background: rgb(0, 0, 0);
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition: transform 0.5s;
+  width: 100%;
+}
+
+.toggle-btn__line--top {
+  top: 3px;
+}
+.toggle-btn__line--center {
+  top: 15px;
+}
+.toggle-btn__line--bottom {
+  top: 27px;
+}
+.toggle-btn__line--top.active {
+  top: 15px;
+  transform: rotate(45deg);
+}
+.toggle-btn__line--center.active {
+  transform: scaleX(0);
+}
+.toggle-btn__line--bottom.active {
+  top: 15px;
+  transform: rotate(135deg);
+}
+/* ナビゲーションメニュー
+==============================　*/
+.global-nav {
+  display: none;
+  position: fixed;
+  background: rgba(251, 250, 245);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.global-nav__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.global-nav__item {
+  margin-bottom: 30px;
+  list-style: none;
+}
+.global-nav__item a {
+  color: rgb(39, 39, 39);
+  font-size: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.global-nav__item a:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  padding-top: 50px;
+  box-shadow: 0px  4px 10px 0px rgb(0, 0, 0);
+}
+.footer-p {
+  margin: 0;
+  text-align: center;
+  font-size: 20px;
+}

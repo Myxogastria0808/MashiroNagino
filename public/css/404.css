@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    --background-color: rgb(251, 250, 245);
+    background-color: var(--background-color);
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+.img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* 005 */
+.button005 a {
+    text-decoration: none;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 220px;
+    padding: 10px 25px;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: rgb(0, 153, 204);
+    background: linear-gradient(270deg, rgba(0, 153, 204,1) 0%, rgba(0, 153, 204,1) 100%);
+}
+.button005 a:hover {
+    background: rgb(0, 153, 204);
+    background: linear-gradient(270deg, rgba(0, 153, 204,0.7) 0%, rgba(0, 153, 204, 0.7) 100%);
+}

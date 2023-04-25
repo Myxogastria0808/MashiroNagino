@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-image: url(../img/harf-year.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+}
