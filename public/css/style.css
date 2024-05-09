@@ -11,7 +11,7 @@ html {
   height: 200px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/harf-year.webp);
+  background-image: url(../img/header.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -23,7 +23,7 @@ html {
 /*タイトル文字の配置*/
 .parallax {
   box-sizing: border-box;
-  color: #FFF;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,28 +33,39 @@ html {
 
 /*背景画像を擬似要素で固定*/
 body::before {
-  background: url('../img/FdfukuTUYAALmN0.webp') no-repeat center;/* 擬似要素に背景画像 */
-  background-size: cover;/* cover指定 */
-  content: "";/* 画像を表示させる為に必要*/
-  display: block;/*ブロックボックスで表示*/
-  position: fixed;/* 擬似要素全体を固定 */
-  width: 100%;/* 横幅を画面全体 */
-  height: 100vh;/* 縦幅を画面全体 */
-  top: 0;/* 上からの配置を0 */
-  left: 0;/* 左からの配置を0 */
-  z-index: -1;/*背景画像になるように重ね順を-1*/
+  background: url("../img/FdfukuTUYAALmN0.webp") no-repeat center; /* 擬似要素に背景画像 */
+  background-size: cover; /* cover指定 */
+  content: ""; /* 画像を表示させる為に必要*/
+  display: block; /*ブロックボックスで表示*/
+  position: fixed; /* 擬似要素全体を固定 */
+  width: 100%; /* 横幅を画面全体 */
+  height: 100vh; /* 縦幅を画面全体 */
+  top: 0; /* 上からの配置を0 */
+  left: 0; /* 左からの配置を0 */
+  z-index: -1; /*背景画像になるように重ね順を-1*/
 }
 
 .blur {
   width: 100%;
   height: 300px;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) rgb(255, 255, 255)); 
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgb(255, 255, 255)); 
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)); 
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) rgb(255, 255, 255)
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
 }
 .container {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
+  width: 100%;
+  background-color: rgb(255, 255, 255);
 }
 .inner-container {
   width: 100%;
@@ -94,60 +105,37 @@ body::before {
   }
 }
 
-
-
-
-
-
-
-
-
 /* fadeUp */
-.fadeUp{
-  animation-name:fadeUpAnime;
-  animation-duration:3.0s;
-  animation-fill-mode:forwards;
-  opacity:0;
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-@keyframes fadeUpAnime{
+@keyframes fadeUpAnime {
   from {
     opacity: 0;
-  transform: translateY(100px);
+    transform: translateY(100px);
   }
 
   to {
     opacity: 1;
-  transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
-
 /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
-.fadeUpTrigger{
+.fadeUpTrigger {
   opacity: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .blog-card {
   max-width: 550px;
-  width:100%;
+  width: 100%;
   height: 500px;
   position: absolute;
-  color:#fff;
+  color: #fff;
   top: 20%;
   right: 0;
   left: 0;
@@ -155,13 +143,13 @@ body::before {
   overflow: hidden;
   border-radius: 0px;
   text-align: center;
-  transition:all 0.4s;
+  transition: all 0.4s;
   background-size: 100%;
 }
-.blog-card .Top_a{
-color:#fff;
-  text-decoration:none;
-  transition:all 0.2s
+.blog-card .Top_a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 .blog-card .color-overlay {
   width: 550px;
@@ -184,8 +172,8 @@ color:#fff;
   opacity: 1;
   bottom: 100px;
 }
-.blog-card:hover .title-content{
-  margin-top:70px
+.blog-card:hover .title-content {
+  margin-top: 70px;
 }
 .title-content {
   text-align: center;
@@ -195,18 +183,18 @@ color:#fff;
   width: 100%;
   top: 0;
   left: 0;
-  transition:all 0.6s
+  transition: all 0.6s;
 }
-.blog-card:hover h3:after{
+.blog-card:hover h3:after {
   animation: changeLetter 0.3s 1 linear;
-  width:80%
+  width: 80%;
 }
 .blog-card h3 {
   font-size: 1.9em;
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 0;
-  display:inline-block;
+  display: inline-block;
 }
 .TopBigTitleh3:after {
   content: " ";
@@ -215,8 +203,8 @@ color:#fff;
   height: 2px;
   margin: 20px auto;
   border: 0;
-  background: #BDA26B;
-  transition:all 0.2s
+  background: #bda26b;
+  transition: all 0.2s;
 }
 
 @keyframes changeLetter {
@@ -233,11 +221,11 @@ color:#fff;
   color: #ddd;
   line-height: 18px;
 }
-.intro .Top_a{
-  color: #ddd
+.intro .Top_a {
+  color: #ddd;
 }
-.intro .Top_a:hover{
-  text-decoration:underline
+.intro .Top_a:hover {
+  text-decoration: underline;
 }
 .card-info {
   box-sizing: border-box;
@@ -254,10 +242,10 @@ color:#fff;
   opacity: 0;
   transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
-.card-info .Top_a{
-  display:block;
-  width:100px;
-  margin:15px auto;
+.card-info .Top_a {
+  display: block;
+  width: 100px;
+  margin: 15px auto;
   color: #fff;
   font-size: 16px;
   border-radius: 3px;
@@ -265,33 +253,33 @@ color:#fff;
   box-shadow: 0px 0px 3px #808080;
   border: white solid 1px;
 }
-.card-info .Top_a:hover{
+.card-info .Top_a:hover {
   background: #8e7c49;
-  color:#fff;
+  color: #fff;
   border: none;
 }
-.card-info .Top_a:hover span{
-    filter: brightness(10);
-    opacity:1
+.card-info .Top_a:hover span {
+  filter: brightness(10);
+  opacity: 1;
 }
-@media (max-width:500px){
-  .card-info{
-    display:none
+@media (max-width: 500px) {
+  .card-info {
+    display: none;
   }
-  .blog-card:hover .title-content,.title-content{
-    margin-top:40px
+  .blog-card:hover .title-content,
+  .title-content {
+    margin-top: 40px;
   }
-  .blog-card{
-    height:300px
+  .blog-card {
+    height: 300px;
   }
-  .blog-card h3{
-    font-size:1.3em
+  .blog-card h3 {
+    font-size: 1.3em;
   }
-  .intro{
-    font-size:0.8em
+  .intro {
+    font-size: 0.8em;
   }
 }
-
 
 .TopBigTiltle {
   text-shadow: 0px 0px 6px #000000;
@@ -323,33 +311,22 @@ color:#fff;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.profile{
-  position:relative;
-  width:95%;
-  height:840px;
+.profile {
+  position: relative;
+  width: 95%;
+  height: 840px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.profile img{
-  position:absolute;
-  top:0px;
-  left:0px;
+.profile img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 @media screen and (min-width: 650px) {
   .profile img {
-    height:800px;
+    height: 800px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -357,21 +334,21 @@ color:#fff;
     width: 100%;
   }
 }
-.profile .text{
-  position:absolute;
+.profile .text {
+  position: absolute;
   margin: 0;
-  bottom:0px;
-  right:0px;
+  bottom: 0px;
+  right: 0px;
   max-width: 600px;
-  background:#fff;
-  padding:10px;
-  box-shadow:0 0 5px #999;
-  font-size:12px;
-  line-height:24px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 0 5px #999;
+  font-size: 12px;
+  line-height: 24px;
 }
 @media screen and (min-width: 650px) {
   .text {
-    height:450px;
+    height: 450px;
   }
 }
 @media screen and (max-width: 650px) and (min-width: 570px) {
@@ -409,7 +386,9 @@ color:#fff;
   color: rgb(101, 189, 255);
   font-weight: bold;
 }
-.fa-youtube {color: rgb(255, 0, 0);}
+.fa-youtube {
+  color: rgb(255, 0, 0);
+}
 @media screen and (min-width: 570px) {
   .profileh2 {
     font-size: 40px;
@@ -469,19 +448,6 @@ span {
   display: inline-block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*shutter animation loading*/
 .shutter_1 {
   padding: 0;
@@ -490,11 +456,11 @@ span {
 #loader {
   width: 100%;
   height: 100%;
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: auto;
   background-color: rgb(255, 255, 255);
   z-index: 1000;
@@ -503,12 +469,12 @@ span {
 
 @keyframes fadeOut {
   from {
-      opacity: 1;
+    opacity: 1;
   }
   to {
-      display: none;
-      opacity: 0;
-      z-index: -1;
+    display: none;
+    opacity: 0;
+    z-index: -1;
   }
 }
 #loader.loaded {
@@ -516,21 +482,20 @@ span {
 }
 .shutter_1 {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* The loader container */
 .loader {
-
   width: 200px;
   height: 100px;
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: auto;
-  
+
   perspective: 1000px;
   transform-style: preserv3d;
 }
@@ -544,7 +509,7 @@ span {
   background-color: rgba(29, 33, 137, 0.6);
   transform: scaleY(0);
   transform-style: preserve3d;
-  animation: bar 3s cubic-bezier(.81,.04,.4,.7) infinite;
+  animation: bar 3s cubic-bezier(0.81, 0.04, 0.4, 0.7) infinite;
 }
 .bar:nth-child(2) {
   left: 20px;
@@ -588,66 +553,32 @@ span {
 }
 .bar:nth-child(10) {
   left: 180px;
-  
+
   background-color: rgb(2, 160, 233, 0.6);
-  
+
   animation-delay: 450ms;
 }
 @keyframes bar {
   0% {
     transform: rotateZ(-180deg) rotateX(-360deg);
   }
-  75%,100% {
+  75%,
+  100% {
     transform: rotateZ(0) rotateX(0);
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 850px) {
   .PC {
-      display: none;
+    display: none;
   }
 }
 @media screen and (min-width: 850px) {
   .mobile {
-      display: none;
+    display: none;
   }
 }
-.site-header{
+.site-header {
   background: rgba(251, 250, 245, 0.485);
   display: flex;
   position: fixed;
@@ -655,7 +586,7 @@ span {
   width: 100%;
   z-index: 100;
   height: 60px;
-  box-shadow: 0px  4px 6px 0px rgba(0, 0, 0, 0.482);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.482);
 }
 .site-header.transform {
   background: rgb(251, 250, 245);
@@ -672,37 +603,37 @@ span {
 .gnav {
   padding-right: 20px;
 }
-.site-logo img{
+.site-logo img {
   height: 60px;
   width: auto;
   margin-top: -20px;
 }
-.gnav__menu{
+.gnav__menu {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.gnav__menu__item{
+.gnav__menu__item {
   margin-left: 20px;
-  list-style:none;
+  list-style: none;
   position: relative;
   display: inline-block;
-  transition: .3s;
+  transition: 0.3s;
 }
-.gnav__menu__item a{
+.gnav__menu__item a {
   color: #333;
   text-decoration: none;
 }
 .gnav__menu__item::after {
   position: absolute;
-  bottom: .3em;
+  bottom: 0.3em;
   left: 0;
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   background-color: rgb(31, 190, 187);
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
   margin-bottom: -4px;
 }
 .gnav__menu__item:hover::after {
@@ -711,20 +642,20 @@ span {
   opacity: 1;
   height: 2px;
 }
-.rubyposition_under{
+.rubyposition_under {
   display: inline-block;
 }
-.rubyposition_under ruby{
+.rubyposition_under ruby {
   display: flex;
   flex-direction: column;
-  text-align: justify;  /* この指定は text-align-last を IE に対応させるために必要 */
+  text-align: justify; /* この指定は text-align-last を IE に対応させるために必要 */
   text-align-last: center;
 }
-.PC_span ruby{
+.PC_span ruby {
   font-size: 20px;
   text-align-last: center;
 }
-.mobile_span ruby{
+.mobile_span ruby {
   font-size: 30px;
   text-align-last: left;
 }
@@ -801,40 +732,33 @@ span {
   opacity: 0.7;
 }
 
-
-
-
-
-
-
-
-.item-list{
+.item-list {
   display: flex;
   justify-content: center; /* 中央寄せ */
 }
-.item-list .item{
+.item-list .item {
   box-sizing: border-box;
-  padding: 40px 80px;  
+  padding: 40px 80px;
 }
 @media screen and (max-width: 560px) {
   .hashtagPC {
     display: none;
-  } 
+  }
 }
 @media screen and (min-width: 560px) {
   .hashtagMobile {
     display: none;
-  } 
+  }
 }
 @media screen and (max-width: 900px) {
   .salePC {
     display: none;
-  } 
+  }
 }
 @media screen and (min-width: 900px) {
   .saleMobile {
     display: none;
-  } 
+  }
 }
 .saleMobile {
   max-width: 400px !important;
@@ -842,20 +766,12 @@ span {
   margin-right: auto !important;
 }
 
-
-
-
 .marshmallow {
   margin-left: auto;
   margin-right: auto;
   max-width: 500px;
   width: 90%;
 }
-
-
-
-
-
 
 .youtube {
   width: 95%;
@@ -928,9 +844,6 @@ span {
   }
 }
 
-
-
-
 /*----------------------------
 scroll_up ｜下から上へ出現
 ----------------------------*/
@@ -941,7 +854,7 @@ scroll_up ｜下から上へ出現
 }
 .scroll_up1.on {
   transform: translateY(0);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .scroll_up2 {
@@ -951,7 +864,7 @@ scroll_up ｜下から上へ出現
 }
 .scroll_up2.on {
   transform: translateY(0);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .scroll_up3 {
@@ -961,7 +874,7 @@ scroll_up ｜下から上へ出現
 }
 .scroll_up3.on {
   transform: translateY(0);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .scroll_up4 {
@@ -971,7 +884,7 @@ scroll_up ｜下から上へ出現
 }
 .scroll_up4.on {
   transform: translateY(0);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .scroll_up5 {
@@ -981,7 +894,7 @@ scroll_up ｜下から上へ出現
 }
 .scroll_up5.on {
   transform: translateY(0);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .scroll_up_movie1 {
@@ -991,7 +904,7 @@ scroll_up ｜下から上へ出現
 }
 .scroll_up_movie1.on {
   transform: translateY(0);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .scroll_up_movie2 {
@@ -1001,7 +914,7 @@ scroll_up ｜下から上へ出現
 }
 .scroll_up_movie2.on {
   transform: translateY(0);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .scroll_up_movie3 {
@@ -1011,7 +924,7 @@ scroll_up ｜下から上へ出現
 }
 .scroll_up_movie3.on {
   transform: translateY(0);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 /*right and left*/
@@ -1022,7 +935,7 @@ scroll_up ｜下から上へ出現
 }
 .scroll_up_introduction1.on {
   transform: translateX(0);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .scroll_up_introduction2 {
@@ -1032,76 +945,63 @@ scroll_up ｜下から上へ出現
 }
 .scroll_up_introduction2.on {
   transform: translateX(0);
-  opacity: 1.0;
+  opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mybox{
-	background: none;
-	border: 1px solid rgb(108, 202, 255);	/* 線の太さ・種類・色 */
-	margin: 15px 10px; /* 外側の余白 上下・左右 */
-	padding: 20px; /* 内側の余白 */
-	position: relative;
+.mybox {
+  background: none;
+  border: 1px solid rgb(108, 202, 255); /* 線の太さ・種類・色 */
+  margin: 15px 10px; /* 外側の余白 上下・左右 */
+  padding: 20px; /* 内側の余白 */
+  position: relative;
   text-align: center;
   font-size: 18px;
 }
-.mybox::before{
-	background-color: rgb(255, 255, 255);
-	padding: 2px 10px; /* タイトルの余白 上下・左右 */
-	position: absolute;
-	top: -10px;
-	left: 30px;
-	text-align: center;
+.mybox::before {
+  background-color: rgb(255, 255, 255);
+  padding: 2px 10px; /* タイトルの余白 上下・左右 */
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  text-align: center;
 }
-.mybox::after{
-	background: none;
-	border: 1px solid rgb(108, 202, 255);	/* 線の太さ・種類・色 */
-	content: '';
-	position: absolute;
-	top: 3px;
-	left: 3px;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+.mybox::after {
+  background: none;
+  border: 1px solid rgb(108, 202, 255); /* 線の太さ・種類・色 */
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 .hashtagnormal::before {
-  content: '汎用タグ';
+  content: "汎用タグ";
 }
 .hashtaglive::before {
-  content: '配信タグ';
+  content: "配信タグ";
 }
 .hashtagFA::before {
-  content: 'ファンアートタグ';
+  content: "ファンアートタグ";
 }
 .hashtagFAR::before {
-  content: 'R18タグ';
+  content: "R18タグ";
 }
 .hashtagcut::before {
-  content: '切り抜きタグ';
+  content: "切り抜きタグ";
 }
 .hashtagmail::before {
-  content: 'お知らせタグ';
+  content: "お知らせタグ";
 }
 .hashtaglunch::before {
-  content: 'お料理タグ';
+  content: "お料理タグ";
 }
 .hashtagpiano::before {
-  content: 'ピアノタグ';
+  content: "ピアノタグ";
 }
 .hashtagmarshmallow::before {
-  content: 'マシュマロタグ';
+  content: "マシュマロタグ";
 }
 
 .hashtagitem {
@@ -1109,14 +1009,12 @@ scroll_up ｜下から上へ出現
   width: 100% !important;
 }
 
-
 /* カード裏面・表面の共通スタイル */
 .card .back,
 .card .front {
   transition: all 0.6s;
   backface-visibility: hidden;
 }
-
 
 /* カード表面のスタイル */
 .card .front {
@@ -1131,25 +1029,22 @@ scroll_up ｜下から上へ出現
   transform: rotateY(0);
 }
 
-
-
 .twitter-div {
   margin-left: auto;
   margin-right: auto;
   width: 95%;
 }
 
-
-
 footer {
   width: 100%;
-  height: 50px;
+  height: 150px;
   background-color: white;
   padding-top: 50px;
-  box-shadow: 0px  4px 10px 0px rgb(0, 0, 0);
+  box-shadow: 0px 4px 10px 0px rgb(0, 0, 0);
 }
 .footer-p {
   margin: 0;
+  margin-top: 20px;
   text-align: center;
   font-size: 20px;
 }
